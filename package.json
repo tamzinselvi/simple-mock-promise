@@ -1,0 +1,31 @@
+{
+  "name": "simple-mock-promise",
+  "version": "1.0.0",
+  "description": "A simple mock promise to be used with your favorite testing harness",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomselvi/simple-mock-promise.git"
+  },
+  "keywords": [
+    "promise",
+    "mock",
+    "jasmine",
+    "mocha",
+    "simple"
+  ],
+  "author": "Tom Selvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomselvi/simple-mock-promise/issues"
+  },
+  "homepage": "https://github.com/tomselvi/simple-mock-promise#readme",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "chai-spies": "0.7.1",
+    "mocha": "3.3.0"
+  }
+}
