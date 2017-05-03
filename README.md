@@ -8,20 +8,20 @@ Are you using jasmine or chai and need a better way to test promises? Do you wan
 
 Mock your then-catch-finally to help isolate handlers and unit test.
 
-```
+```javascript
 import simpleMockPromise from "simple-mock-promise"
 
-or
+// or
 
 var simpleMockPromise = require("simple-mock-promise")
 
-simpleMockPromise("then", {
+var promise = simpleMockPromise("then", {
   data: true
 })
 
-jasmine.spyOn(yourService, "yourMethod").and.return(simpleMockPromise)
+jasmine.spyOn(yourService, "yourMethod").and.return(promise)
 
-chai.spy.on(yourService, "yourMethod").returns(simpleMockPromise)
+chai.spy.on(yourService, "yourMethod").returns(promise)
 ```
 
 # License
